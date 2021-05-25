@@ -1,0 +1,16 @@
+mat-card {
+  margin: auto;
+  background-color: #ccffff;
+}
+
+mat-form-field {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+button {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}

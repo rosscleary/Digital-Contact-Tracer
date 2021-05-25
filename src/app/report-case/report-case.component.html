@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-title> Report Case </mat-card-title>
+  <br>
+  <mat-card-subtitle> Please enter a confirmed positive case and use the listed names to implement public safety measures in your capacity as a public health official. </mat-card-subtitle>
+
+  <form (submit)="onReportCase(entryForm)" #entryForm="ngForm">
+      <mat-form-field>
+        <input matInput
+        type="text"
+        name="fullname"
+        ngModel
+        placeholder="Full Name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput
+        type="text"
+        name="phonenumber"
+        ngModel
+        placeholder="Phone Number">
+      </mat-form-field>
+    <button mat-raised-button type="submit" color="warn"><mat-icon>warning</mat-icon>Report Case</button>
+  </form>
+  <br>
+  <mat-accordion *ngFor="let entry of displayedEntries; index as i">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        {{ entry.fullname }}
+      </mat-expansion-panel-header>
+      <h3>Phone Number:</h3> {{ entry.phonenumber }} <br><br> <h3>Risk:</h3> {{displayedRisks[i]}}
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <button *ngIf="listDisplayed" mat-raised-button color="accent" (click)="onClearList()">Clear List</button>
+
+</mat-card>
+
+
+

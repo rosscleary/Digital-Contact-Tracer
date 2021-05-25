@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-card-title> Add Entry </mat-card-title>
+  <br>
+  <mat-card-subtitle> Please write the correct location code provided by a staff member. </mat-card-subtitle>
+</mat-card>
+
+<mat-card>
+
+  <form (submit)="onAddEntry(entryForm)" #entryForm="ngForm">
+
+    <mat-form-field appearance="legacy">
+      <input matInput
+      type="text"
+      name="locationcode"
+      ngModel
+      placeholder="Location Code"
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy">
+      <input matInput
+      type="text"
+      name="fullname"
+      ngModel
+      placeholder="Full Name">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field appearance="legacy">
+      <input matInput
+      type="text"
+      name="phonenumber"
+      ngModel
+      placeholder="Phone Number">
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy">
+      <input matInput
+      type="datetime-local"
+      name="date"
+      ngModel
+      placeholder="Date & Time">
+    </mat-form-field>
+
+    <br>
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+
+</form>
+<br><br><br><br>
+</mat-card>

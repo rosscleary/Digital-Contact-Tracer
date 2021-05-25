@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/" routerLinkActive="matt-accent">Add Entry</button>
+    <button mat-menu-item routerLink="/report-case" routerLinkActive="mat-accent">Report Case</button>
+  </mat-menu>
+  <span>Digital Contact Tracer</span>
+</mat-toolbar>

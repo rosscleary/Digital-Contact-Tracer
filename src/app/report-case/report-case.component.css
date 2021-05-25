@@ -1,0 +1,32 @@
+mat-card {
+  margin: auto;
+  background-color: #ccffff;
+}
+
+mat-form-field {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+button {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+mat-icon {
+  margin-bottom: 5px;
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+mat-expansion-panel{
+  color: white;
+  background-color: #fa7066;
+}
+
+h3{
+margin-bottom: 0px;
+}
+
